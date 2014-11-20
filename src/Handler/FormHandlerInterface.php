@@ -12,11 +12,6 @@ Interface FormHandlerInterface
     public function handle(FormDataInterface $data);
 
     /**
-     * @return mixed
-     */
-    public function getNewDataInstance();
-
-    /**
      * @return FormTypeInterface|string
      */
     public function getType();

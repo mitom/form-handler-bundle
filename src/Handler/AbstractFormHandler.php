@@ -25,8 +25,6 @@ abstract class AbstractFormHandler implements FormHandlerInterface
      */
     public function createForm($data = null, array $options = [])
     {
-        $data = $data ?: $this->getNewDataInstance();
-
         return $this->formFactory->create($this->getType(), $data, $options);
     }
 
@@ -36,7 +34,7 @@ abstract class AbstractFormHandler implements FormHandlerInterface
     public function handle(FormDataInterface $formData)
     {
         $request = $formData->getRequest();
-        $data = $formData->getData() ? :$this->getNewDataInstance();
+        $data = $formData->getData();
         $options = $formData->getOptions() ? :[];
 
         if ($formData->getForm()) {

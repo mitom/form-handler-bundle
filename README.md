@@ -75,12 +75,6 @@ class TaskFormHandler extends AbstractFormHandler
     }
 
     /** @inheritDoc */
-    public function getNewDataInstance()
-    {
-        return new Task();
-    }
-
-    /** @inheritDoc */
     public function getType()
     {
         /**
