@@ -7,7 +7,7 @@ use Mitom\Bundle\FormHandlerBundle\FormDataInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormTypeInterface;
 
-Interface FormHandlerInterface
+interface FormHandlerInterface
 {
     public function handle(FormDataInterface $data);
 
